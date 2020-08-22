@@ -1,0 +1,88 @@
+@font-face{
+  font-family: 'Monlam_Uni_Chouk';
+  src: url('../font/Monlam_Uni_Chouk.ttf');
+}
+@font-face{
+    font-family: 'Monlam_Uni_ChoukMatik';
+    src: url('../font/Monlam_Uni_ChoukMatik.ttf');
+}
+@font-face{
+    font-family: 'Monlam_Uni_Dutsa1';
+    src: url('../font/Monlam_Uni_Dutsa1.ttf');
+}
+
+@font-face{
+  font-family: 'Monlam_Uni_Dutsa2';
+  src: url('../font/Monlam_Uni_Dutsa2.ttf');
+}
+@font-face{
+    font-family: 'Monlam_Uni_OuChan1';
+    src: url('../font/Monlam_Uni_OuChan1.ttf');
+}
+@font-face{
+    font-family: 'Monlam_Uni_OuChan2';
+    src: url('../font/Monlam_Uni_OuChan2.ttf');
+}
+@font-face{
+  font-family: 'Monlam_Uni_OuChan3';
+  src: url('../font/Monlam_Uni_OuChan3.ttf');
+}
+@font-face{
+    font-family: 'Monlam_Uni_OuChan5';
+    src: url('../font/Monlam_Uni_OuChan5.ttf');
+}
+@font-face{
+    font-family: 'Monlam_Uni_PayTsik';
+    src: url('../font/Monlam_Uni_PayTsik.ttf');
+}
+
+@font-face{
+  font-family: 'Monlam_Uni_Sans_Serif';
+  src: url('../font/Monlam_Uni_Sans_Serif.ttf');
+}
+@font-face{
+    font-family: 'Monlam_Uni_Tikrang';
+    src: url('../font/Monlam_Uni_Tikrang.ttf');
+}
+@font-face{
+    font-family: 'Monlam_Uni_TikTong';
+    src: url('../font/Monlam_Uni_TikTong.ttf');
+}
+
+#font1{
+    font-family: Monlam_Uni_Chouk;
+}
+#font2{
+    font-family: Monlam_Uni_ChoukMatik;
+}
+#font3{
+    font-family: Monlam_Uni_Dutsa1;
+}
+#font4{
+    font-family: Monlam_Uni_Dutsa2;
+}
+#font5{
+    font-family: Monlam_Uni_OuChan1;
+}
+#font6{
+    font-family:  Monlam_Uni_OuChan2;
+}
+#font7{
+    font-family: Monlam_Uni_OuChan3;
+}
+#font8{
+    font-family: Monlam_Uni_OuChan5;
+}
+#font9{
+    font-family: Monlam_Uni_PayTsik;
+}
+#font10{
+    font-family: Monlam_Uni_Sans_Serif;
+}
+#font11{
+    font-family: Monlam_Uni_Tikrang;
+}
+#font12{
+    font-family: Monlam_Uni_TikTong;
+}
+

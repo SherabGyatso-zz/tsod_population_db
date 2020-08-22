@@ -13,10 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
+//First Page after the public file
+Route::get('/','AdminController@login');
+
+//Admin Login 
 Route::match(['get','post'],'/admin','AdminController@login');
 
 Auth::routes();

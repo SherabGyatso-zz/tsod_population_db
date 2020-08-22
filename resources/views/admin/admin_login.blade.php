@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     
@@ -8,7 +9,8 @@
 		<link rel="stylesheet" href="{{ asset('css/backend_css/bootstrap-responsive.min.css') }}" />
         <link rel="stylesheet" href="{{ asset('css/backend_css/matrix-login.css') }}" />
         <link href="{{ asset('fonts/backend_fonts/font-awesome/css/font-awesome.css" rel="stylesheet') }}" />
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{{ asset('fonts/backend_fonts/css/custom.css') }}" />
 
     </head>
     <body>
@@ -26,7 +28,8 @@
             </div>
         @endif            
             <form id="loginform" class="form-vertical" method="post" action="{{ url('admin') }}">{{ csrf_field() }}
-				 <div class="control-group normal_text"> <h3><img src="{{ asset('images/backend_images/logo.png') }}" alt="Logo" />TSOD DBMS ADMIN</h3></div>
+            <div class="control-group normal_text"> <h3><img src="{{ asset('images/backend_images/logo1.png') }}" alt="Logo" /></h3></div>
+                 <!-- <div class="control-group normal_text" id="header">་<h1>ལྡི་ལི་ས་གནས་གྲངས་མཐོ་མཉེན་ཆས་།</h1></div> -->
                 <div class="control-group">
                     <div class="controls">
                         <div class="main_input_box">

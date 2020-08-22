@@ -1,6 +1,7 @@
-<!--Header-part-->
+<!--Header-part-->			
 <div id="header">
-  <h1><a href="{{ url('/admin/dashboard') }}">TSOD DBMS</a></h1>
+  <!-- <h1><a href="{{ url('/admin/dashboard') }}">གྲངས་མཐོ་མཉེན་ཆས་།</a></h1> -->
+  <h1>གྲངས་མཐོ་མཉེན་ཆས་།</h1>
 </div>
 <!--close-Header-part--> 
 

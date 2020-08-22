@@ -27,11 +27,14 @@ class ReportsController extends Controller
             $request->query('y', Carbon::now()->year),
             $request->query('m', Carbon::now()->month)
         ));
+
+       
         $from_year = $from->year;
     
         if(Session::get('adminDetails')['profile_view_access']==0){
             return redirect('/admin/dashboard')->with('flash_message_error','You have no access for this module');
         }
+     
         
         $profiles = DB::table('profiles');
         $profiles = $profiles->get();

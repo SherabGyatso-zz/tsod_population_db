@@ -57,7 +57,6 @@
                 @php 
                 $i = 1;
                 @endphp
-    
                 <tr class="gradeX">
                   <td>{{ $i }}</td>
                   <td>{{ $totalmales }}</td>
@@ -66,7 +65,6 @@
                 @php 
                     $i++;
                 @endphp
-               
               </tbody>
             </table>
           </div>
