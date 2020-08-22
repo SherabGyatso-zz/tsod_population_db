@@ -1,0 +1,11 @@
+fileignoreconfig:
+- filename: .env.example
+  checksum: 14f20b75326fad008c63abd3f79677292cefb7e18cf33e2603c242e017570b96
+- filename: aliases
+  checksum: 413e36b1082fa7f4bdf19797ef4413649134ef18a071f373c8a70df737d29364
+- filename: composer.lock
+  checksum: a275d9c5c26fbd25c85c241f13b2164cbae645d9bfd061bbc0bd99b3d774e893
+- filename: config/database.php
+  checksum: 68f9282007c7ddcc8255895ded1e48d0a6e7647e65677e6bccd6c07f5093cf44
+- filename: data_dump/tsod_db.sql
+  checksum: 4a325bd9da9508527730cabc45c6eec482b1ef099208f84d09bb0717044b2d36
