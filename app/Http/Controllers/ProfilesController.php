@@ -73,7 +73,7 @@ class ProfilesController extends Controller
     	}
 
         //Occupation drop down start
-        $occupations = occupation::where(['parent_id'=>0])->get();
+        $occupations = occupation::get();
     	$occupations_dropdown = "<option value ='0' selected disable>Select</opton>";
     	foreach ($occupations as $occu) {
     		$occupations_dropdown .= "<option value='".$occu->id."'>".$occu->name."</option>";
@@ -81,7 +81,7 @@ class ProfilesController extends Controller
         //Occupation drop down ends
 
         //Sponsorship drop down start
-        $sponsorships = sponsorship::where(['parent_id'=>0])->get();
+        $sponsorships = sponsorship::get();
     	$sponsorships_dropdown = "<option value ='0' selected disable>Select</opton>";
     	foreach ($sponsorships as $sponsor) {
     		$sponsorships_dropdown .= "<option value='".$sponsor->id."'>".$sponsor->name."</option>";
@@ -89,7 +89,7 @@ class ProfilesController extends Controller
         //Sponsorship drop down ends
 
         //Sponsorship drop down start
-        $settlements = settlement::where(['parent_id'=>0])->get();
+        $settlements = settlement::get();
     	$settlements_dropdown = "<option value ='0' selected disable>Select</opton>";
     	foreach ($settlements as $settlement) {
     		$settlements_dropdown .= "<option value='".$settlement->id."'>".$settlement->name."</option>";
@@ -132,7 +132,7 @@ class ProfilesController extends Controller
         $profileDetails = Profile::where(['id'=>$id])->first();
 
         //Occupation drop down start
-        $occupations = occupation::where(['parent_id'=>0])->get();
+        $occupations = occupation::get();
         $occupations_dropdown = "<option value ='0' selected disable>Select</opton>";
         foreach ($occupations as $occu) {
             if($occu->id==$profileDetails->occupation_id){
@@ -145,7 +145,7 @@ class ProfilesController extends Controller
         //Occupation drop down ends
 
         //Sponsorship drop down start
-        $sponsorships = sponsorship::where(['parent_id'=>0])->get();
+        $sponsorships = sponsorship::get();
         $sponsorships_dropdown = "<option value ='0' selected disable>Select</opton>";
         foreach ($sponsorships as $sponsor) {
             if($sponsor->id==$profileDetails->sponsorship_id){
@@ -158,7 +158,7 @@ class ProfilesController extends Controller
         //Sponsorship drop down ends
 
         //Settlement drop down start
-        $settlements = settlement::where(['parent_id'=>0])->get();
+        $settlements = settlement::get();
         $settlements_dropdown = "<option value ='0' selected disable>Select</opton>";
         foreach ($settlements as $settlement) {
             if($settlement->id==$profileDetails->settlement_id){
