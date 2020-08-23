@@ -47,7 +47,7 @@ Route::group(['middleware' => ['adminlogin']],function(){
 	Route::match(['get','post'],'/admin/delete-settlement/{id}','SettlementController@deleteSettlement');
 	Route::get('/admin/view-settlements','SettlementController@viewSettlements');
 
-	//Profie Routes (Admin) 
+	//Profie Routes (Admin)
 	Route::match(['get','post'],'/admin/add-profile','ProfilesController@addProfile');
 	Route::match(['get','post'],'/admin/edit-profile/{id}','ProfilesController@editProfile');
 	Route::get('/admin/view-profiles','ProfilesController@viewProfiles');
