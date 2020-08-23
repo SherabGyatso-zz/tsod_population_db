@@ -13,7 +13,7 @@
     @if(Session::get('adminDetails')['type']=="Admin")
     <li class="submenu"> <a href="#"><i class="icon-user"></i> <span>Admin Management</span> <span class="label label-important"></span></a>
       <ul <?php if (preg_match("/admins/i", $url)){ ?> style="display: block;" <?php } ?>>
-        <li <?php if (preg_match("/add-admins/i", $url)){ ?> class="active" <?php } ?>><a href="{{ url('/admin/add-admin') }}"><i class="icon-user"></i> Add Admin</a></li>
+        <li <?php if (preg_match("/add-admins/i", $url)){ ?> class="active" <?php } ?>><a href="{{ url('/admins/create') }}"><i class="icon-user"></i> Add Admin</a></li>
         <li <?php if (preg_match("/view-admins/i", $url)){ ?> class="active" <?php } ?>><a href="{{ url('/admin/view-admins') }}"><i class="icon-user"></i> View Admin</a></li> 
         <li <?php if (preg_match("/population_reports/i", $url)){ ?> class="active" <?php } ?>><a href="{{ url('/admin/population_reports') }}"><i class="icon icon-signal"></i> Yearly report</a></li>
       </ul>

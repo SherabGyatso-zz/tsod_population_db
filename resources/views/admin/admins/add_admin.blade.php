@@ -25,7 +25,7 @@
             <h5>Add Admin</h5>
           </div>
           <div class="widget-content nopadding">
-            <form class="form-horizontal" method="post" action="{{ url('/admin/add-admin') }}" name="add_admin" id="add_admin" novalidate="novalidate"> {{ csrf_field() }}
+            <form class="form-horizontal" method="post" action="{{ url('/admins') }}" name="add_admin" id="add_admin" novalidate="novalidate"> {{ csrf_field() }}
             <div class="control-group">
                 <label class="control-label">Type</label>
                 <div class="controls">
