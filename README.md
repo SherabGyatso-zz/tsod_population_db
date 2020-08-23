@@ -8,28 +8,40 @@
 |  Name | Version |
 | ------------- | ------------- |
 | PHP  | > 7.2   |
-| MySQL | >= 8  |
+| MySQL | >= 5.5 |
+| Virtualbox | >= 6.0 (Only for development) | 
 
 ## Development 
 
-1. Install virtualbox and run 
+1. Clone 
+
+        git clone git@github.com:SherabGyatso/tsod_population_db.git
+
+2. Update your project directory location at (Homestead.yaml Line:13)(./Homestead.yaml#13)
+
+
+3. Install virtualbox and run 
 
         vagrant up 
 
-2. Hit: http://192.168.10.10/admin/
+4. Access home page at http://192.168.10.10
+
+5. Your project folder is synced with `/home/vagrant/code` directory of the VM. So any updates are auto reflected. 
+
+6. Enjoy development 😎
 
 
 ## Useful Commands
 
-```bash
-php artisan make:migration create_settlements_table
-php artisan migrate
-php artisan db:seed
-php artisan db:wipe
-composer dump-autoload
-php artisan make:seeder SettlementSeeder
 
-```
+| Command  | Description |
+| ------------- | ------------- |
+| `php artisan make:migration create_users_table`  | Create a db migration file |
+| `php artisan make:seeder UserSeeder` | Create seeder file |
+| `php artisan migrate`  | Apply migrations |
+| `php artisan db:seed`  | Seed database | 
+| `php artisan db:wipe`  | Clear database | 
+| `composer dump-autoload` | Reload newly added files | 
 
 
 
