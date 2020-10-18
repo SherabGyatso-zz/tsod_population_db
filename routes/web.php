@@ -17,10 +17,6 @@ Route::get('/', function () {
 	return view('admin.admin_login');
 });
 
-Route::get('/admin', function () {
-	return view('admin.admin_login');
-});
-
 Route::post('/admin', 'AdminController@login');
 
 Auth::routes();
