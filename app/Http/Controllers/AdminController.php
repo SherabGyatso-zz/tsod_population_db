@@ -8,12 +8,16 @@ use Session;
 use App\User;
 use App\Admin;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Log;
+
+use function Psy\debug;
 
 class AdminController extends Controller
 {
     public function login(Request $request)
     {
         $data = $request->input();
+        // Log::debug('password:'.md5($data['password']));
         $adminCount = Admin::where(['username' => $data['username'], 'password' => md5($data['password']), 'status' => 1])->count();
         if ($adminCount > 0) {
             //if(Auth::attempt(['email'=>$data['email'],'password'=>$data['password'],'admin'=>'1'])){
@@ -22,7 +26,7 @@ class AdminController extends Controller
             return redirect('/admin/dashboard');
         } else {
             // echo "Failed"; die;
-            return redirect('/admin')->with('flash_message_error', 'Invalid Username or Password');
+            return redirect('/')->with('flash_message_error', 'Invalid Username or Password');
         }
     }
 
